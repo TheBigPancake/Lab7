@@ -1,0 +1,48 @@
+.myradio input {
+    display: none;
+}
+
+.myradio span {
+    position: relative;
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    border: 2px solid #a0a0a0;
+}
+
+.myradio:hover span {
+    border: 2px solid #7e7e7e
+}
+
+.myradio input:checked+span {
+    border: 2px solid #F44336
+}
+
+.myradio:hover input:checked+span {
+    border: 2px solid #d6261a
+}
+
+.myradio input+span::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 0.1em;
+    height: 0.1em;
+    border-radius: 50%;
+}
+
+.myradio input:checked+span::before {
+    left: 2px;
+    top: 2px;
+    background: #F44336;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    transition: 0.15s;
+}
+
+.myradio:hover input:checked+span::before {
+    background: #d6261a;
+}

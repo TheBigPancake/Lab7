@@ -1,0 +1,29 @@
+.utable table{
+    border-spacing: 0;
+}
+.utable th {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    background: blueviolet;
+    color: white;
+    padding: 8px;
+  }
+  .utable tr {
+    font-size: 16px;
+    background: #e1c9f8;
+  }
+  .utable tr:nth-child(2n) {
+    background: #c28ef3;
+  }
+  .utable td{
+    padding: 3px 4px 3px 4px;
+  }
+  .utable td:first-child {
+    text-align: center;
+    color: white;
+  }
+  .utable td:last-child {
+    text-align: center;
+    color: rgb(190, 54, 54);
+  }

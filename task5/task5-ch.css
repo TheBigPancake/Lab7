@@ -1,0 +1,53 @@
+.mycheck {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.mycheck+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.mycheck+label::before {
+    content: '';
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    background-color: #adb5bd;
+    border-radius: 0.15em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    transition: 0.3s;
+}
+
+.mycheck:hover+label::before{
+    border: 1px solid #8c9399;
+    background-color: #8c9399;
+}
+
+.mycheck:checked+label span::before {
+    content: " ";
+    position: absolute;
+    width: 8px; height: 2px;
+    margin-left: -22px;
+    margin-top: -8px;
+    background: #050505;
+    transition: 1s;
+    transform: rotate(-45deg) translateY(9.4px) translateX(-1px);
+} 
+
+
+.mycheck:checked+label span::after{
+    content: " ";
+    position: absolute;
+    width: 8px; height: 2px;
+    background: #000000;
+    transform: translateX(-21px) translateY(0px) rotate(50deg);
+}

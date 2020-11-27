@@ -1,0 +1,22 @@
+.inter_buttom {
+    background: cadetblue;
+    font: 25px bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+    display: inline-block;
+    margin: 3px 15px 3px 10px;
+    border-bottom: 5px solid cadetblue;
+    color: black;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    transition: 0.5s;
+}
+
+.inter_buttom:hover {
+    background: darkorchid;
+    color: wheat;
+    border-bottom: 5px solid cadetblue;
+}

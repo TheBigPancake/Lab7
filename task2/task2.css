@@ -1,0 +1,45 @@
+  .pMenu ul li, 
+  .pMenu ul{
+      width: 140px;
+      padding: 10px;
+      border-bottom: 2px solid white;
+  }
+
+  .pMenu ul{
+    position: relative;
+    margin:  0;
+    padding: 0;
+    background-color: #336699;
+  }
+
+  .pMenu ul ul{
+    display: none;
+    position: absolute;
+    background-color: #7fcc7f;
+    margin-top: -29px;
+    margin-left: 130px;
+  }
+
+  .pMenu ul > li:hover{
+    background-color: #004d9b;
+    width: 120px;
+  }
+
+  .pMenu ul ul > li:hover{
+    background-color: #52bb52;
+    width: 120px;
+  }
+
+  .pMenu a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .pMenu li:hover ul{
+    display: block;
+  }
+  
+  .pMenu li:hover li{
+    display: block;
+  }

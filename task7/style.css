@@ -1,0 +1,43 @@
+.conteiner{
+    width: 960px;
+}
+.topBlock{
+   background-image: url(https://dgdesign.ru/uploads/posts/2019-02/1549455082_shapka-sayta-vesna-1151132.jpg);
+   background-repeat: repeat; 
+   height: 20vh;
+}
+.leftBlock{
+    width: 250px;
+}
+.centralBlock{
+    width: 100%;
+}
+.rightBlock{
+    width: 150px;
+}
+.downBlock{
+    text-align: center;
+    text-shadow: 15%;
+    height: 10%;
+    background-color: rgb(110, 110, 110);
+}
+.centralBlock img{
+    margin-left: auto;
+}
+.leftBlock a,
+ .rightBlock a{
+    text-decoration: none;
+    color: rgb(20, 8, 48);
+    font-size: 20px;
+}
+.leftBlock a:hover,
+ .rightBlock a:hover{
+    text-decoration: underline;
+    color: rgb(43, 16, 105);
+}
+.leftBlock li,
+ .rightBlock li{
+    list-style-type:none ;
+    padding: 10px;
+}
+
